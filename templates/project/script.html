@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee tag</title>
+</head>
+<body>
+    <center>
+        <h1>HTML MARQUEE TAG</h1>
+        <p>to give scrolling effect to html elements we can use the marque tag</p>
+    </center>
+    <hr>
+   <marquee>THIS IS A MARQUEE TAG...</marquee>
+   <hr>
+   <marquee>
+    <h1>THIS IS THE HEADING...</h1>
+    <H1>THIS IS THE SECOND HEADING TAG..</H1>
+    <img src="../image1.jpg" alt="">
+   </marquee>
+   <p>we can insert any html elements inside the marque tag</p>
+
+   <center>
+    <h1>MARQUEE TAG WITH ATTRIBUTES</h1>
+   </center>
+   <hr>
+   <marquee behavior="alternate" direction="right">this is a marquee tag with atributes</marquee>
+   <marquee behavior="scroll" direction="up">this is a marquee tag with atributes</marquee>
+   <marquee behavior="slide" direction="left">this is a marquee tag with atributes</marquee>
+   <marquee behavior="slide" direction="down">this is a marquee tag with atributes</marquee>
+   <marquee behavior="alternate" direction="down">this is a marquee tag with atributes</marquee>
+   <center>
+    <h1>MARQUEE TAG WITH SCROLL AMOUNT ATTRIBUTE</h1>
+   </center>
+   <hr>
+   <marquee behavior="scroll" direction="left" bgcolor="red" scrllamount="2" id="myMarquee" onclick="stoper">THIS IS THE TEXT WITH SCROLL AMOUNT ATTRIBUTE</marquee>
+   <center>
+    <h1>dynamic marquee tag...</h1>
+   </center>
+   <hr>
+   <marquee behavior="scroll" direction="right" scrollamount="10" bgcolor="green" ID="my marquee">THIS IS THE DYNAMIC MARQUEE TAG TEXT</marquee>
+   <script>
+    document.getElementById("my marquee").onmouseover = function(){
+        document.getElementById('my marquee').stop();
+        document.getElementById('my marquee').style.color = "white";
+       document.getElementById('my marquee').style.background = "black";
+        
+
+    }
+    document.getElementById("my marquee").onmouseleave = function(){
+        document.getElementById('my marquee').start();
+        document.getElementById('my marquee').style.color= "black";
+        document.getElementById('my marquee').style.background="green";
+    }
+    //function.stoper(){
+      //  var m= document.getElementById('myMarquee')
+        //m.stope
+        //m.style.color="white"
+        //m.style.back
+    //}
+    function hello(){
+        alert("hello world...!")
+    }
+   </script>
+</body>
+</html>
+</html>

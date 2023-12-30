@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card{
+            width: 300px;
+            padding: 10px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .container{
+            background-color: rgb(177, 177, 177);
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-flow: wrap;
+        }
+        .card img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .card img:hover{
+            filter: grayscale(100%);
+            transform: scale(1.3);
+            transition: 1s;
+        }
+        button{
+            border: none;
+            padding: 15px;
+            width: 100%;
+            background-color: #f30010;
+            color: #fff;
+            font-size: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+           
+            
+        }
+        button:hover{
+            opacity: 0.5;
+        }
+        h3{
+            color: aqua;
+        }
+        p{
+            margin-bottom: 10px;
+            margin-top: 10px;
+            color: #717171;
+        }
+        .scroller{
+            display: flex;
+            gap: 30px;
+            color: #fff;
+            
+        }
+        .scroller p{
+            color: #fff;
+        }
+        marquee{
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <marquee behavior="scroll" direction="right" scrollamount="19" bgcolor="#f30010">
+        <div class="scroller">
+            <p>Order Now</p>
+        <p>Order Now</p>
+        <p>Order Now</p>
+        <p>Order Now</p>
+        <p>Order Now</p>
+        <p>Order Now</p>
+        <p>Order Now</p>
+        <p>Order Now</p>
+        <p>Order Now</p>
+        <p>Order Now</p>
+        </div>
+    </marquee>
+    <div class="container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXc20i5MpUv-Aav7VnsrfV9NzhVgOgoauEo9HC9VRdsHYQn8Fp-5eGLkcqHOXAz5De-Wc&usqp=CAU" alt="">
+            <h3>Pizza</h3>
+            <p><small><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatem possimus temporibus eaque voluptas exercitationem sapiente adipisci nihil perspiciatis fugit ipsam dicta, voluptate consequatur deleniti, ipsa doloremque odit! Officia, voluptatum!</i></small></p>
+            <p><del>299/-</del> <b>199/-</b></p>
+            <button type="button">Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXc20i5MpUv-Aav7VnsrfV9NzhVgOgoauEo9HC9VRdsHYQn8Fp-5eGLkcqHOXAz5De-Wc&usqp=CAU" alt="">
+            <h3>Pizza</h3>
+            <p><small><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatem possimus temporibus eaque voluptas exercitationem sapiente adipisci nihil perspiciatis fugit ipsam dicta, voluptate consequatur deleniti, ipsa doloremque odit! Officia, voluptatum!</i></small></p>
+            <p><del>299/-</del> <b>199/-</b></p>
+            <button type="button">Order Now</button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXc20i5MpUv-Aav7VnsrfV9NzhVgOgoauEo9HC9VRdsHYQn8Fp-5eGLkcqHOXAz5De-Wc&usqp=CAU" alt="">
+            <h3>Pizza</h3>
+            <p><small><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatem possimus temporibus eaque voluptas exercitationem sapiente adipisci nihil perspiciatis fugit ipsam dicta, voluptate consequatur deleniti, ipsa doloremque odit! Officia, voluptatum!</i></small></p>
+            <p><del>299/-</del> <b>199/-</b></p>
+            <button type="button">Order Now</button>
+        </div>
+    </div>
+</body>
+</html>
